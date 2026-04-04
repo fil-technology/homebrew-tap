@@ -6,11 +6,11 @@ Homebrew tap for Esh.
 
 ```bash
 brew tap fil-technology/tap
-brew install esh
+brew install --cask esh
 ```
 
 ## Upgrade
 
 ```bash
-brew upgrade esh
+brew upgrade --cask esh
 ```
