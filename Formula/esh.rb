@@ -8,8 +8,8 @@ class Esh < Formula
   depends_on macos: :ventura
 
   def install
-    libexec.install Dir["*"]
-    bin.install_symlink libexec/"esh" => "esh"
+    pkgshare.install Dir["*"]
+    bin.install_symlink pkgshare/"esh" => "esh"
   end
 
   test do
