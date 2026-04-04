@@ -1,8 +1,8 @@
 cask "esh" do
-  version "0.1.10"
-  sha256 "e5247d0b66a6440cfdfd2cd243e8558f80bca0d3b30946044cdc365d9d853e6c"
+  version "0.1.14"
+  sha256 "c756ffa96a3911da7a6f48017b2c1bf7d9ff5128022916ed6c93a8b69fa7c22d"
 
-  url "https://github.com/fil-technology/esh/releases/download/v#{version}/esh-macos-#{version}.tar.gz"
+  url "https://github.com/fil-technology/esh/releases/download/v#{version}/esh-macos-#{version}.zip"
   name "Esh"
   desc "Local-first LLM tool for Apple Silicon"
   homepage "https://github.com/fil-technology/esh"
@@ -10,5 +10,5 @@ cask "esh" do
   depends_on macos: ">= :ventura"
   depends_on formula: "python"
 
-  binary "esh-macos-#{version}/esh", target: "esh"
+  binary "esh-macos-#{version}/bin/esh", target: "esh"
 end
