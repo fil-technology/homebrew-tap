@@ -9,5 +9,5 @@ cask "esh" do
 
   depends_on macos: ">= :ventura"
 
-  binary "esh-macos-#{version}/esh", target: "esh"
+  binary "esh-macos-#{version}/bin/esh", target: "esh"
 end
