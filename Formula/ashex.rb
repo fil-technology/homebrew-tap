@@ -2,13 +2,13 @@ class Ashex < Formula
   desc "Local-first Swift coding agent for macOS with a TUI, daemon, and typed tools"
   homepage "https://github.com/fil-technology/Ashex"
   license "MIT"
-  version "0.2.4"
+  version "0.2.5"
 
   depends_on :macos
 
   on_arm do
-    url "https://github.com/fil-technology/Ashex/releases/download/v0.2.4/ashex-0.2.4-macos-arm64.tar.gz"
-    sha256 "f937db70828b0b59172427f4703e009c5dda7694913e670aa411c226ccef3f95"
+    url "https://github.com/fil-technology/Ashex/releases/download/v0.2.5/ashex-0.2.5-macos-arm64.tar.gz"
+    sha256 "08bf001a39f4ed74d656d8a16b38d2b66838819b58241150bd47d96117d2d3bb"
   end
 
   on_intel do
@@ -18,6 +18,7 @@ class Ashex < Formula
   def install
     dir = Dir["ashex-*"].first || "."
     bin.install "#{dir}/bin/ashex" => "ashex"
+    bin.install "#{dir}/bin/Ashex_AshexCore.bundle"
     pkgshare.install "#{dir}/share/doc/ashex/README.md", "#{dir}/share/doc/ashex/LICENSE"
   end
 
