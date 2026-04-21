@@ -3,6 +3,7 @@ class Ashex < Formula
   homepage "https://github.com/fil-technology/Ashex"
   license "MIT"
   version "0.2.5"
+  revision 1
 
   depends_on :macos
 
@@ -17,8 +18,9 @@ class Ashex < Formula
 
   def install
     dir = Dir["ashex-*"].first || "."
-    bin.install "#{dir}/bin/ashex" => "ashex"
-    bin.install "#{dir}/bin/Ashex_AshexCore.bundle"
+    libexec.install "#{dir}/bin/ashex"
+    libexec.install "#{dir}/bin/Ashex_AshexCore.bundle"
+    bin.write_exec_script libexec/"ashex"
     pkgshare.install "#{dir}/share/doc/ashex/README.md", "#{dir}/share/doc/ashex/LICENSE"
   end
 
