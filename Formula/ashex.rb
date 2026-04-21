@@ -2,13 +2,13 @@ class Ashex < Formula
   desc "Local-first Swift coding agent for macOS with a TUI, daemon, and typed tools"
   homepage "https://github.com/fil-technology/Ashex"
   license "MIT"
-  version "0.2.12"
+  version "0.2.13"
 
   depends_on :macos
 
   on_arm do
-    url "https://github.com/fil-technology/Ashex/releases/download/v0.2.12/ashex-0.2.12-macos-arm64.tar.gz"
-    sha256 "0ea91ce3cc309be14324b396e27c949fe49bd35beb633b2b42b936b4b2706de7"
+    url "https://github.com/fil-technology/Ashex/releases/download/v0.2.13/ashex-0.2.13-macos-arm64.tar.gz"
+    sha256 "a51d9aacb1aa6514f611eb782bc578f6e74b6483ba3780057a7aa0237ca7aae0"
   end
 
   on_intel do
