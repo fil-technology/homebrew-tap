@@ -8,7 +8,7 @@ class Ashex < Formula
 
   on_arm do
     url "https://github.com/fil-technology/Ashex/releases/download/v0.2.18/ashex-0.2.18-macos-arm64.tar.gz"
-    sha256 "03c2b1da225c67db8d92734818d2036b44cbcfa28521f6ae929a57dbfe740d50"
+    sha256 "73717f9302d4e25fced99cf2b7f02a087aa1ee266663a8454ecdde9c7cc015c6"
   end
 
   on_intel do
