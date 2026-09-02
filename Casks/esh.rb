@@ -1,6 +1,6 @@
 cask "esh" do
-  version "0.9.7"
-  sha256 "94218aabc2bc304cbf60ba4d2f71ae1a9123bfa124296896fffe96f15e69b827"
+  version "2.0.0"
+  sha256 "faf786eec2975803122f1770bd197202dc1c1829059c6887785c4b14acafa284"
 
   url "https://github.com/fil-technology/esh/releases/download/v#{version}/esh-macos-#{version}.zip"
   name "Esh"
